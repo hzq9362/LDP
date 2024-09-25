@@ -1,5 +1,3 @@
 # LDP
-Practice demo
-This line is added later using the terminal.
-This line is added later using R Studio
-This line is added from GitHub
+
+This is the project folder for the LDP course project. I am using my master's thesis project as an example here.
