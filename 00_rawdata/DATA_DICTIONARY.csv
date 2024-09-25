@@ -1,0 +1,13 @@
+﻿Field,Data type,Description
+OID_,int,Number ID for each station
+Station_ID,str,Unique stations ID from the source data
+R,double,Statistical parameter for validation
+R2,double,Statistical parameter for validation
+NSE,double,Statistical parameter for validation
+BIAS,double,Statistical parameter for validation
+RMSE,double,Statistical parameter for validation
+MAE,double,Statistical parameter for validation
+SMAPE,double,Statistical parameter for validation
+UBA,double,Upstream basin area in km^2
+Longitude,double,Station longitude
+Latitude,double,Station latitude
