@@ -1,0 +1,94 @@
+---
+title: "Untitled"
+author: "Ziqian Han"
+date: "2024-09-24"
+output: html_document
+bibliography: 
+  - references.bib
+  - grateful-refs.bib
+
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/ecology-letters.csl"
+---
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Comments
+
+<!--comments-->
+
+*bold* **bold**
+
+## code chunks, with options
+
+```{r, include = TRUE, echo = TRUE}
+summary(cars)
+```
+
+## Plots
+
+```{r pressure, echo=TRUE}
+plot(pressure,
+     pch = 19,
+     col = "blue",
+     cex = 2,
+     xlab = "Temperature",
+     ylab = "Pressure")
+```
+
+## Plots from file
+
+![](../03_figs/plot.png)
+
+# Tables
+
+```{r}
+knitr::kable(head(iris))
+```
+
+```{r}
+knitr::kable(head(iris),
+             align = "l",
+             caption = "Look at this table")
+```
+
+## Equations
+
+I can have in-line equation $alpha=beta$ Or start at a new line $$alpha=beta$$
+
+## References
+
+This is a citation in brackets [@vanvliet2013]
+
+@vanvliet2013 is a citation in a sentence.
+
+# I want my references here:
+
+::: {#refs}
+:::
+
+## General
+
+## The `grateful` package
+
+```{r, echo=TRUE}
+grateful::cite_packages(output = "paragraph", out.dir = ".")
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
